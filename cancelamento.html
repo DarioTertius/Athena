@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelamento</title>
+    <link rel="stylesheet" href="estilocancel.css">
+</head>
+<body>
+    <header>
+    <div>
+        <div id="divdaimage">
+        <img src="athenacancel.png" width="400" height="200">
+        </div>
+        <h1>Atenção: Ao realizar o preenchimento de cada etapa, clique no botão "Gerar resposta" e o texto será gerado no final da página  
+        </h1>
+        <a href="inicial.html">
+            <button class="botao" id="botao2">Menu</button>
+        </a>
+    </div>
+    </header>    
+        <div>
+        <p>    
+        <h4 for="numeroProtocolo">Protocolo Ouvidoria:</h4>
+        <input type="text" id="numeroProtocolo">
+    
+        <h4 for="dataProtocolo">Data do Protocolo:</h4>
+        <input type="text" id="dataProtocolo">
+    
+        <button onclick="gerarFrase()">Gerar resposta</button> 
+        
+        <h3>ou</h3>
+        
+        <h4 for="numeroProtocolo2">Protocolo de Primeiro nível válido:</h4>
+        <input type="text" id="numeroProtocolo2">
+    
+        <h4 for="dataProtocolo">Data do Protocolo:</h4>
+        <input type="text" id="dataProtocolo2">
+    
+        <button onclick="gerarFrase2()">Gerar resposta</button>
+        </p>
+        </div>
+    
+
+    
+    <div id="semsacio">
+    <h4 id="sacio">Sem acionamentos anteriores válidos</h4>
+    <button onclick="gerarFrase3()">Gerar resposta</button><br><br>
+    </div>
+   
+    <div>
+    <h4 for="numeroProtocolo">Protocolo ANATEL:</h4>
+    <input type="text" id="numeroProtocolo3">
+    <h4 for="nometit">Nome do titular do contrato:</h4>
+    <input type="text" id="nometit">
+    <h4 for="datacontato">Data do Contato:</h4>
+    <input type="text" id="datacontato" placeholder="Dia/Mês/Ano">
+    <h4 for="horacontato">Hora do Contato:</h4>
+    <input type="text" id="horacontato" placeholder="00:00">
+    <h4 for="telcontato">Telefone:</h4>
+    <input type="text" id="telcontato">
+    <h4 for="telcontato">Meio de Contato:</h4>
+    <input type="text" id="meiodecontato" placeholder="WhatsApp ou telefone?">    
+    <h4>Data do Cancelamento:</h4>
+    <input type="text" id="datacancel" placeholder="data de solicitação do cancelamento">
+    <h4>Serviço Cancelado:</h4>
+    <input type="text" id="servcancel" placeholder="serviço que foi solicitado cancelamento">
+    <h4>Plano:</h4>
+    <input type="text" id="plano" placeholder="plano que foi solicitado cancelamento">
+    <button onclick="gerarFrase4()"> Gerar resposta</button>
+    </div>
+
+    <div>
+        <h4>Calculadora de Desconto:</h4>    
+        <input type="number" id="diasdedefeito" placeholder="Dias de defeito">
+        <input type="number" id="valorserv" placeholder="Valor do servviço defeituoso">
+        <h6><strong>* Favor usar ponto ao invés de vírgula! </strong> </h6>
+        <button onclick="calculoProrata()">Calcular</button>
+    </div>
+
+    <div>
+        <h4>Infos Complementares</h4>
+        <h4 for="creditfut">Data de vencimento:</h4>
+        <input type="text" id="datavencimento">
+        <h4 for="creditfut">Informações sobre multa rescisória:</h4>
+        <input type="text" id="infoscomplementares" placeholder="Informar se haverá cobrança de multa valores etc.">
+        <button onclick="gerarFrase6()"> Gerar Resposta</button>
+    </div>
+    
+
+
+    
+    <div>
+    <h4>E-mail de contato</h4>
+    <h4 for="creditacordo">Digite e-mail:</h4>
+    <input type="text" id="emailcontato" placeholder="E-mail do assistente ou Ouvidoria">
+    <h4 for="creditacordo">Digite Protocolo gerado: </h4>
+    <input type="text" id="protgerado" placeholder="Protocolo NEXT, SIEBEL ou 360°">
+    <button onclick="gerarEmail()">Gerar resposta</button>
+    </div>
+    
+    <div>
+    <h5 id="frase-container"></h5>
+    <h5 id="frase-container2"></h5>
+    <h5 id="frase-container3"></h5>
+    <h5 id="frase-container4"></h5>
+    <h5 id="fraseContainer5"></h5>
+    <h5 id="fraseContainer6"></h5>
+    <h5 id="fraseContainer8"></h5>
+    </div>
+
+    <script src="cancelamento.js"></script>
+</body>
+</html>

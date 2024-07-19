@@ -1,0 +1,152 @@
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif; /* Set a clean and readable font */
+  margin: 2rem; /* Add some margin around the page content */
+  background-color: #f5f5f5; /* Light gray background */
+  border-right: 4px solid #4CAF50;
+  display: inline;
+}
+
+/* Container Styles (for grouping sections) */
+.container {
+  display: flex; /* Allow sections to sit side-by-side */
+  flex-wrap: wrap; /* Wrap sections to next line if needed on small screens */
+  margin-bottom: 1rem; /* Add space between sections */
+}
+
+/* Section Styles */
+section {
+  background-color: #fff; /* White background for sections */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 1rem; /* Add some padding inside sections */
+  margin: 0.5rem; /* Add some margin between sections */
+  flex: 1 0 48%; /* Make sections responsive, adjust width as needed */
+}
+
+/* Label Styles */
+label {
+  display: block; /* Labels on separate lines */
+  margin-bottom: 0.6rem; /* Space between labels and inputs */
+  font-weight: bold; /* Make labels stand out */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="number"] {
+  padding: 0.5rem;
+  border: 2px solid #4CAF50;
+  border-radius: 4px;
+  width: 50%; /* Full width for inputs */
+}
+
+/* Button Styles */
+button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4CAF50; /* Green color for buttons */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Headings (h4) */
+h4 {
+  margin-top: 1rem; /* Space above headings */
+  margin-bottom: 0.5rem; /* Space below headings */
+}
+
+header{
+  padding: 12px;
+  display: flex;
+  text-align: center;
+}
+
+h1 {
+  background-color: whitesmoke;
+  text-decoration: double;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 12px;
+  color: rebeccapurple;
+
+}
+
+
+
+div{
+  width: 95%;
+  border-width: 1.4px;
+  border-color: #3e8e41;
+  border-style: solid;
+  border-radius: 15px;
+  border-left: 4px solid #3e8e41;
+  border-right: 4px solid #3e8e41;
+  font-size: 15px;
+  padding: 12px;
+
+}
+
+p{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Placeholder Text Color */
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #ccc; /* Light gray placeholder text */
+}
+
+/* Specific Section Styling (for visual distinction) */
+
+/* Section 1 (Ouvidoria) */
+
+
+/* Section 2 (Sem acionamentos) */
+#sacio {
+  color: #F00; /* Red color for text */
+}
+
+/* Section 3 (ANATEL) */
+#protAnt2 {
+  border-right: 4px solid #4CAF50; /* Green border on right side */
+}
+
+h6{
+  color: red;
+} 
+
+#divdaimage{
+  background-color: #4CAF50;
+}
+
+/* Section 4 onwards (Calculations) */
+.calculo-container {
+  display: flex; /* Align calculation elements side-by-side */
+  justify-content: space-between; /* Distribute elements evenly */
+  margin-bottom: 0.5rem; /* Space between calculation sections */
+}
+
+.calculo-container input[type="number"] {
+  width: 48%; /* Adjust width for calculation inputs */
+}
+
+/* Final Note Section */
+.final-note {
+  font-style: italic; /* Italic font style for a softer tone */
+  margin-top: 1rem; /* Space above final note */
+}
+
+/* Text Container for Generated Text (optional) */
+.frase-container {
+  background-color: #eee; /* Light gray background for generated text */
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0; /* Space around generated text container */
+}

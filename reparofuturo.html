@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparo Futuro</title>
+    <link rel="stylesheet" href="estilofut.css">
+</head>
+<body>
+    <header>
+    <div>
+    <div id="divdaimage">    
+    <img src="athenafut.png" width="400" height="200">    
+    </div>
+    <h1>Atenção: Ao realizar o preenchimento de cada etapa, clique no botão "Gerar resposta" e o texto será gerado no final da página</h1>
+    <a href="index.html">
+        <button class="botao" id="botao2">Menu</button>
+    </a>
+    </div>
+    </header>
+    <div>    
+    <p>    
+    <h4 for="numeroProtocolo">Protocolo Ouvidoria:</h4>
+    <input type="text" id="numeroProtocolo">
+
+    <h4 for="dataProtocolo">Data do Protocolo:</h4>
+    <input type="text" id="dataProtocolo">
+
+    <button onclick="gerarFrase()">Gerar resposta</button> 
+    
+    <h3>ou</h3>
+    
+    <h4 for="numeroProtocolo2">Protocolo de Primeiro nível válido:</h4>
+    <input type="text" id="numeroProtocolo2">
+
+    <h4 for="dataProtocolo">Data do Protocolo:</h4>
+    <input type="text" id="dataProtocolo2">
+
+    <button onclick="gerarFrase2()">Gerar resposta</button>
+    </p>
+    </div>    
+    
+
+    
+    <div id="semsacio">
+    <h4 id="sacio">Sem acionamentos anteriores válidos</h4>
+    <button onclick="gerarFrase3()">Gerar resposta</button><br><br>
+    </div>
+   
+    <div>
+    <h4 for="numeroProtocolo">Protocolo ANATEL:</h4>
+    <input type="text" id="numeroProtocolo3">
+    <h4 for="nometit">Nome do Titular do Contrato:</h4>
+    <input type="text" id="nometit">
+    <h4 for="datacontato">Data do Contato:</h4>
+    <input type="text" id="datacontato" placeholder="Dia/Mês/Ano">
+    <h4 for="horacontato">Hora do Contato:</h4>
+    <input type="text" id="horacontato" placeholder="00:00">
+    <h4 for="telcontato">Telefone:</h4>
+    <input type="text" id="telcontato">
+    <h4 for="telcontato">Meio de Contato:</h4>
+    <input type="text" id="meiodecontato" placeholder="WhatsApp ou telefone?"> 
+    <h4 for="telcontato">Serviço que será Reparado:</h4>
+    <input type="text" id="servreparado">
+    <h4 for="datadProtocolo">Data do Reparo:</h4>
+    <input type="text" id="dataReparo"> 
+    <h4 for="dataProtocolo">Período Agendado:</h4>
+    <input type="text" id="protoRep">
+    <button onclick="gerarFrase4()"> Gerar resposta</button>
+    </div>
+
+    <div>
+    <h4>Calculadora de Desconto:</h4>    
+    <input type="number" id="diasdedefeito" placeholder="Dias de defeito">
+    <input type="number" id="valorserv" placeholder="Valor do serviço defeituoso">
+    <button onclick="calculoProrata()">Calcular</button>
+    </div>
+
+    <div>
+    <h4>Crédito Futuro?</h4>
+    <h4 for="creditfut">Data de vencimento:</h4>
+    <input type="text" id="creditfut">
+    <button onclick="gerarFrase6()">Gerar resposta</button>
+    </div>    
+
+    <div>
+    <h4>Ajuste em fatura?</h4>
+    <label for="creditfut">Data de vencimento antiga:</label>
+    <input type="text" id="datajust">
+    <label for="creditfut">Valor da fatura antiga:</label> 
+    <input type="text" id="valorantigo">
+    <h6><strong>* Favor usar ponto ao invés de vírgula! </strong> </h6>
+    <label for="creditfut">Valor do desconto:</label>
+    <input type="text" id="calculogerado" placeholder="*Favor preencher com o valor de desconto gerado na calculadora de desconto acima." >
+    <h6><strong>* Favor usar ponto ao invés de vírgula! </strong> </h6>
+    <label for="creditfut">Data de vencimento nova:</label>
+    <input type="text" id="datajustnova" >
+    <button onclick="gerarFrase61()">Gerar resposta</button>
+    </div>
+    
+    <div>
+    <h4>Crédito em acordo?</h4>
+    <label for="creditacordo">Digite valor:</label>
+    <input type="text" id="creditacordo">
+    <button onclick="gerarValor()">Gerar resposta</button>
+    </div>    
+    
+    <div>
+    <h4>E-mail de contato</h4>
+    <label for="creditacordo">Digite e-mail:</label>
+    <input type="text" id="emailcontato" placeholder="E-mail do assistente ou Ouvidoria">
+    <label for="creditacordo">Digite Protocolo gerado</label>
+    <input type="text" id="protgerado" placeholder="Protocolo NEXT, SIEBEL ou 360°">
+    <button onclick="gerarEmail()">Gerar resposta</button>
+    </div>
+    
+    <div>
+    <h5 id="frase-container"></h5>
+    <h5 id="frase-container2"></h5>
+    <h5 id="frase-container3"></h5>
+    <h5 id="frase-container4"></h5>
+    <h5 id="fraseContainer5"></h5>
+    <h5 id="fraseContainer6"></h5>
+    <h5 id="fraseContainer61"></h5>
+    <h5 id="fraseContainer7"></h5>
+    <h5 id="fraseContainer8"></h5>
+    </div>
+
+    <script src="scriptfuturo.js"></script>
+</body>
+</html>
